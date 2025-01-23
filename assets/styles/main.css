@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --header-color:teal;
+  --txt-color: rgb(234, 202, 156);
+  --white-color:white;
+}
