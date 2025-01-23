@@ -4,7 +4,26 @@
   box-sizing: border-box;
 }
 :root {
-  --header-color:teal;
+  --header-color: teal;
   --txt-color: rgb(234, 202, 156);
-  --white-color:white;
+  --white-color: white;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
