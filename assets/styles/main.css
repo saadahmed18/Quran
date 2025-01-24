@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  --header-color: teal;
+  --main-color: teal;
   --txt-color: rgb(234, 202, 156);
   --white-color: white;
   --dark-mode-color: #000000e8;
@@ -37,6 +37,9 @@ body.dark {
 img {
   max-width: 100%;
 }
+ul {
+  list-style: none;
+}
 a {
   text-decoration: none;
 }
@@ -44,7 +47,7 @@ header {
   position: sticky;
   top: 0;
   padding: 20px 0;
-  background-color: var(--header-color);
+  background-color: var(--main-color);
 }
 header .container {
   display: flex;
@@ -64,4 +67,23 @@ header .container .logo a {
 header .container img {
   width: 50px;
   cursor: pointer;
+}
+aside nav {
+  position: sticky;
+  top: 0;
+  z-index: -1;
+  width: 250px;
+  padding: 20px;
+  background-color: var(--main-color);
+}
+aside nav ul li {
+  padding: 5px 0;
+}
+aside nav ul li span {
+  color: var(--txt-color);
+}
+aside nav ul li a {
+  font-size: 22px;
+  padding-right: 20px;
+  color: var(--white-color);
 }
