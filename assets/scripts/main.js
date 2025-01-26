@@ -13,7 +13,13 @@ fetch("https://api.alquran.cloud/v1/quran")
   .then((quranData) => {
     let data = ``;
     for (let i = 0; i < quranData.data.surahs.length; i++) {
-      data += `<li><span>${quranData.data.surahs[i].number}</span><a href="#">${quranData.data.surahs[i].name}</a></li>`;
+      data += `<li>
+      <span>${quranData.data.surahs[i].number}</span>
+      <a id="${i + 1}" href="#">${quranData.data.surahs[i].name}</a>
+      </li>`;
     }
     menu.innerHTML = data;
+    document.getElementById("1").onclick = () => {
+      console.log("saad");
+    };
   });
